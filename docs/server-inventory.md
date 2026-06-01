@@ -49,6 +49,7 @@ Host: `snowserver`
 | `tradeflowapp.net` | Static TradeFlow landing page |
 | `app.tradeflowapp.net` | Static frontend plus API proxy to application backend |
 | `dash.tradeflowapp.net` | Static dashboard plus API proxy to application backend |
+| `blueharborindustries.com` | Static Blue Harbor website |
 | `assets.innsmoutharchives.com` | Static asset hosting |
 
 ## Storage Snapshot
