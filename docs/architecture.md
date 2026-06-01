@@ -16,7 +16,7 @@ Caddy reverse proxy
   +-- Immich
   +-- Kavita
   +-- Grafana
-  +-- Python wiki
+  +-- Self-hosted wiki
   +-- TradeFlow frontend/API
 ```
 
@@ -24,7 +24,9 @@ Caddy reverse proxy
 
 Docker is used for packaged applications that benefit from isolated runtime environments, including Jellyfin, Immich, Kavita, Grafana, Prometheus, node-exporter, and Ollama.
 
-Systemd is used for host-level services and custom apps that are simpler to operate directly on the server, including Caddy, Samba, qBittorrent-nox, the TradeFlow backend, and the Python wiki.
+Systemd is used for host-level services and custom apps that are simpler to operate directly on the server, including Caddy, Samba, qBittorrent-nox, the TradeFlow backend, and the self-hosted wiki.
+
+Custom applications are produced with AI-assisted development, then deployed and operated directly on the server. The demonstrated work is directing AI tooling, validating behavior, deploying services, monitoring them, and troubleshooting them in production-style conditions.
 
 ## Monitoring
 
@@ -40,4 +42,3 @@ Tailscale provides private remote access without exposing SSH broadly. Caddy han
 - Reverse proxy changes are validated through Caddy reloads and endpoint checks.
 - Docker health state is used to quickly identify degraded containers.
 - Media storage is split between a primary media mount and an expansion mount.
-

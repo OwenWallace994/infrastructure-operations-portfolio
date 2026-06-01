@@ -31,8 +31,8 @@ Host: `snowserver`
 | `tailscaled.service` | Tailscale mesh VPN |
 | `ssh.service` | SSH access |
 | `qbittorrent.service` | qBittorrent-nox download service |
-| `tradeflow-backend.service` | Custom Node.js backend |
-| `wiki-innsmouth.service` | Custom Python wiki application |
+| `tradeflow-backend.service` | Custom business platform backend |
+| `wiki-innsmouth.service` | Custom self-hosted wiki application |
 | `nvidia-persistenced.service` | NVIDIA GPU persistence support |
 | `unattended-upgrades.service` | Automated security updates |
 
@@ -45,10 +45,10 @@ Host: `snowserver`
 | `photos.innsmoutharchives.com` | Immich on `127.0.0.1:2283` |
 | `metrics.innsmoutharchives.com` | Grafana on `127.0.0.1:3000` |
 | `books.innsmoutharchives.com` | Kavita on `127.0.0.1:5000` |
-| `wiki.innsmoutharchives.com` | Python wiki on `127.0.0.1:8765` |
+| `wiki.innsmoutharchives.com` | Self-hosted wiki on `127.0.0.1:8765` |
 | `tradeflowapp.net` | Static TradeFlow landing page |
-| `app.tradeflowapp.net` | Static frontend plus API proxy to Node backend |
-| `dash.tradeflowapp.net` | Static dashboard plus API proxy to Node backend |
+| `app.tradeflowapp.net` | Static frontend plus API proxy to application backend |
+| `dash.tradeflowapp.net` | Static dashboard plus API proxy to application backend |
 | `assets.innsmoutharchives.com` | Static asset hosting |
 
 ## Storage Snapshot
@@ -58,4 +58,3 @@ Host: `snowserver`
 | `/` | 492G | 105G | 366G | OS and app data |
 | `/mnt/jellyfin/media` | 915G | 820G | 50G | Primary media drive |
 | `/mnt/jellyfin/media/expansion` | 1.3T | minimal | 1.2T | Expansion media volume |
-
