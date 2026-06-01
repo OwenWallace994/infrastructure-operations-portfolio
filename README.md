@@ -2,7 +2,7 @@
 
 This repository documents a self-hosted Linux infrastructure environment used for media services, personal cloud apps, monitoring, reverse proxy routing, and AI-assisted application deployment.
 
-The goal is not to present a toy lab. This is a daily-use server environment with public HTTPS endpoints, Dockerized services, observability, private networking, file sharing, and AI-assisted custom applications running together on infrastructure I administer end to end.
+This is a daily-use server environment with public HTTPS endpoints, Dockerized services, observability, private networking, file sharing, and AI-assisted custom applications running together on infrastructure I administer end to end.
 
 ## What This Demonstrates
 
@@ -42,4 +42,4 @@ The goal is not to present a toy lab. This is a daily-use server environment wit
 
 ## Notes
 
-Sensitive credentials, private keys, tokens, passwords, and application data are intentionally excluded. Public domains, localhost bindings, and service names are included because they help show the operational shape of the environment.
+Sensitive credentials, private keys, tokens, passwords, and application data are excluded. Public domains, localhost bindings, and service names have remained included.
