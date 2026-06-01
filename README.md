@@ -40,6 +40,27 @@ This is a daily-use server environment with public HTTPS endpoints, Dockerized s
 - `scripts/health-check.sh` - server health check command script
 - `resume/` - final resume PDF for applications and portfolio use
 
+## Selected Screenshots
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="./assets/screenshots/grafana-dashboard.png" alt="Grafana infrastructure dashboard" />
+      <p><strong>Grafana</strong><br />Live infrastructure monitoring showing CPU, memory, disk, swap, and network activity for the production server.</p>
+    </td>
+    <td width="50%">
+      <img src="./assets/screenshots/immich-library.png" alt="Immich photo library" />
+      <p><strong>Immich</strong><br />Self-hosted photo management and backup running as part of the broader personal cloud stack.</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="./assets/screenshots/jellyfin-home.png" alt="Jellyfin home screen" />
+      <p><strong>Jellyfin</strong><br />A daily-use media service deployed and operated inside the same self-hosted environment.</p>
+    </td>
+  </tr>
+</table>
+
 ## Notes
 
 Sensitive credentials, private keys, tokens, passwords, and application data are excluded. Public domains, localhost bindings, and service names have remained included.
