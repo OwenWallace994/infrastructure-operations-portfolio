@@ -1,0 +1,14 @@
+.env
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+private/
+backups/
+logs/
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
+

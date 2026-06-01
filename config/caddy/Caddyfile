@@ -1,0 +1,71 @@
+# Main Jellyfin subdomain
+stream.innsmoutharchives.com {
+	reverse_proxy 127.0.0.1:8096
+	encode gzip
+}
+
+innsmoutharchives.com {
+	redir https://stream.innsmoutharchives.com{uri}
+}
+
+photos.innsmoutharchives.com {
+	reverse_proxy 127.0.0.1:2283
+}
+
+metrics.innsmoutharchives.com {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		X-XSS-Protection "1; mode=block"
+	}
+}
+
+tradeflowapp.net, www.tradeflowapp.net {
+	root * /var/www/tradeflow/landingpage
+	file_server
+}
+
+app.tradeflowapp.net {
+	root * /var/www/tradeflow/subdomain
+	file_server
+
+	handle /api/* {
+		reverse_proxy localhost:3001
+	}
+}
+
+dash.tradeflowapp.net {
+	encode gzip zstd
+
+	handle /api/* {
+		reverse_proxy localhost:3001
+	}
+
+	root * /var/www/tradeflow/dash
+	file_server
+}
+
+blueharborindustries.com, www.blueharborindustries.com {
+	root * /var/www/blueharbor/website
+	file_server
+}
+
+assets.innsmoutharchives.com {
+	root * /var/www/assets
+	file_server
+}
+
+wiki.innsmoutharchives.com {
+	encode gzip zstd
+	reverse_proxy 127.0.0.1:8765
+}
+
+books.innsmoutharchives.com {
+	encode gzip zstd
+	reverse_proxy 127.0.0.1:5000
+}
+
